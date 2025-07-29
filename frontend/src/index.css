@@ -1,0 +1,36 @@
+:root {
+  --primary-green: #27ae60;
+  --secondary-grey: #f4f4f4;
+  --text-dark: #222;
+}
+
+body {
+  background: var(--secondary-grey);
+  color: var(--text-dark);
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  min-height: 100vh;
+}
+
+#root, body, html {
+  height: 100%;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.auth-segment {
+  animation: fadeIn 0.7s cubic-bezier(.4,0,.2,1);
+}
+.auth-btn {
+  transition: background 0.2s;
+}
+.auth-btn:hover {
+  background: #219150 !important;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
