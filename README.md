@@ -54,19 +54,19 @@ A modern, full-stack e-commerce application built with the MERN stack (MongoDB, 
 ## 📸 Screenshots
 
 ### Login Page
-![Login Page]<img width="1365" height="678" alt="login" src="https://github.com/user-attachments/assets/aa961af4-718c-4239-8989-ae67d8c31778" />
+<img width="1365" height="678" alt="login" src="https://github.com/user-attachments/assets/aa961af4-718c-4239-8989-ae67d8c31778" />
 
 ### Home Page
-![Home Page]<img width="1350" height="680" alt="homepage" src="https://github.com/user-attachments/assets/6427faa2-e262-421b-b52c-fe66c045edf8" />
+<img width="1350" height="680" alt="homepage" src="https://github.com/user-attachments/assets/6427faa2-e262-421b-b52c-fe66c045edf8" />
 
 ### Products Page
-![Products Page]<img width="1349" height="679" alt="products" src="https://github.com/user-attachments/assets/9386e0d5-6f41-42c0-bd94-2be1f62a6e2f" />
+<img width="1349" height="679" alt="products" src="https://github.com/user-attachments/assets/9386e0d5-6f41-42c0-bd94-2be1f62a6e2f" />
 
 ### Shopping Cart
-![Shopping Cart]<img width="1349" height="677" alt="cart" src="https://github.com/user-attachments/assets/cc7432b9-a8ce-4364-b9f5-9f2afde9dd15" />
+<img width="1349" height="677" alt="cart" src="https://github.com/user-attachments/assets/cc7432b9-a8ce-4364-b9f5-9f2afde9dd15" />
 
 ### User Profile
-![User Profile]<img width="1350" height="677" alt="profile" src="https://github.com/user-attachments/assets/a0c433b7-3a9d-47bd-9558-ae4ee0096955" />
+<img width="1350" height="677" alt="profile" src="https://github.com/user-attachments/assets/a0c433b7-3a9d-47bd-9558-ae4ee0096955" />
 
 
 ## 🚀 Installation
