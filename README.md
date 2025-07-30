@@ -4,9 +4,6 @@ A modern, full-stack e-commerce application built with the MERN stack (MongoDB, 
 
 ![GreenKart](https://img.shields.io/badge/GreenKart-E--commerce-brightgreen)
 ![MERN Stack](https://img.shields.io/badge/MERN-Stack-blue)
-![React](https://img.shields.io/badge/React-18.3.1-blue)
-![Node.js](https://img.shields.io/badge/Node.js-Express-green)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)
 
 ## ✨ Features
 
