@@ -89,7 +89,7 @@ npm install
 
 ### Step 3: Install Frontend Dependencies
 ```bash
-cd ../frontend
+cd frontend
 npm install
 ```
 
