@@ -17,9 +17,6 @@ A modern, full-stack e-commerce application built with the MERN stack (MongoDB, 
 - [Environment Variables](#-environment-variables)
 - [API Endpoints](#-api-endpoints)
 - [Project Structure](#-project-structure)
-- [Usage](#-usage)
-- [Contributing](#-contributing)
-- [License](#-license)
 
 ## ✨ Features
 
@@ -187,42 +184,6 @@ GreenKart MERN/
 │   └── package.json
 └── README.md
 ```
-
-## 🎯 Usage
-
-### For Users
-1. **Register/Login**: Create an account or sign in
-2. **Browse Products**: Explore products by category
-3. **Search**: Use the search bar to find specific items
-4. **Add to Cart**: Click "Add to Cart" on any product
-5. **Manage Cart**: View cart, update quantities, remove items
-6. **Checkout**: Complete your purchase (checkout functionality can be extended)
-
-### For Developers
-1. **API Development**: Add new endpoints in `backend/routes/`
-2. **Database Models**: Create new schemas in `backend/models/`
-3. **Frontend Components**: Add new components in `frontend/src/components/`
-4. **Pages**: Create new pages in `frontend/src/pages/`
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Semantic UI React](https://react.semantic-ui.com/) for UI components
-- [React Router](https://reactrouter.com/) for client-side routing
-- [MongoDB](https://www.mongodb.com/) for database
-- [Express.js](https://expressjs.com/) for backend framework
-
 ## 📞 Support
 
 If you have any questions or need help, please open an issue in the GitHub repository.
