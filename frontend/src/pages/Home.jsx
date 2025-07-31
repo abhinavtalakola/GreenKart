@@ -33,7 +33,11 @@ function Home() {
         ]);
 
         const allProducts = allProductsRes.data;
-        const bestSellers = allProducts.slice(0, 8);
+        const bestSellers = [
+          ...freshProduceProducts.slice(0, 2),
+          ...bakeryProducts.slice(0, 1),
+          ...dairyProducts.slice(0, 1)
+        ];
         
         setBestSellers(bestSellers);
         setBeverages(beveragesRes.data);
