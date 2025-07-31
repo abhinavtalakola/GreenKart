@@ -95,7 +95,7 @@ npm install
 ### Step 4: Set Up Environment Variables
 Create a `.env` file in the backend directory:
 ```env
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=your_mongodb_connection_string/greenkart
 JWT_SECRET=your_jwt_secret_key
 FRONTEND_URL=http://localhost:3000
 PORT=5000
