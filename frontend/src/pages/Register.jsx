@@ -3,7 +3,6 @@ import { Form, Button, Header, Message, Segment, Icon } from 'semantic-ui-react'
 import { Link, useNavigate } from 'react-router-dom';
 import API from '../api';
 import { toast } from 'react-toastify';
-import { useAuth } from '../context/AuthContext';
 
 function Register() {
   const [email, setEmail] = useState('');
@@ -15,7 +14,6 @@ function Register() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [apiError, setApiError] = useState('');
   const navigate = useNavigate();
-  const { login } = useAuth();
 
   const validate = () => {
     const newErrors = {};
@@ -45,10 +43,9 @@ function Register() {
     setErrors(validationErrors);
     if (Object.keys(validationErrors).length === 0) {
       try {
-        const { data } = await API.post('/auth/register', { email, password });
-        login(data.token, data.user);
-        toast.success('Registration successful!');
-        navigate('/');
+        await API.post('/auth/register', { email, password });
+        toast.success('Registration successful! Please login to continue.');
+        navigate('/login');
       } catch (err) {
         setApiError(
           err.response && err.response.data && err.response.data.message
