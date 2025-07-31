@@ -110,11 +110,7 @@ async function seedProductsIfEmpty() {
     const productCount = await Product.countDocuments();
     
     if (productCount === 0) {
-      console.log('Database is empty. Loading sample products...');
       await Product.insertMany(sampleProducts);
-      console.log(`✅ Added ${sampleProducts.length} sample products to database`);
-    } else {
-      console.log(`✅ Database already has ${productCount} products`);
     }
   } catch (error) {
     console.error('Error checking/seeding products:', error);
