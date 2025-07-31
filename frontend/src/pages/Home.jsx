@@ -26,13 +26,16 @@ function Home() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const [bestSellersRes, beveragesRes, produceRes] = await Promise.all([
-          API.get('/products/category/best-sellers'),
+        const [allProductsRes, beveragesRes, produceRes] = await Promise.all([
+          API.get('/products'),
           API.get('/products/category/beverages'),
           API.get('/products/category/fresh-produce')
         ]);
 
-        setBestSellers(bestSellersRes.data);
+        const allProducts = allProductsRes.data;
+        const bestSellers = allProducts.slice(0, 8);
+        
+        setBestSellers(bestSellers);
         setBeverages(beveragesRes.data);
         setFreshProduce(produceRes.data);
       } catch (error) {
