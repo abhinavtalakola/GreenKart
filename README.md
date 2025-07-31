@@ -1,6 +1,6 @@
 # 🛒 GreenKart - MERN E-commerce Platform
 
-A modern, full-stack e-commerce application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) featuring user authentication, product management, shopping cart functionality, and a responsive design.
+A modern, full-stack e-commerce application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) featuring user authentication, product management, shopping cart functionality, and a responsive design. The application automatically loads all 63 products when first run, providing a complete grocery shopping experience.
 
 ![GreenKart](https://img.shields.io/badge/GreenKart-E--commerce-brightgreen)
 ![MERN Stack](https://img.shields.io/badge/MERN-Stack-blue)
@@ -13,6 +13,7 @@ A modern, full-stack e-commerce application built with the MERN stack (MongoDB, 
 - Password reset functionality
 - User profile management
 - Secure password hashing with bcrypt
+- Registration redirects to login page for better UX
 
 ### 🛍️ E-commerce Features
 - Product browsing with search functionality
@@ -21,6 +22,7 @@ A modern, full-stack e-commerce application built with the MERN stack (MongoDB, 
 - Add/remove items from cart
 - Quantity management
 - Real-time cart updates
+- 63 products across 7 categories automatically loaded
 
 ### 🎨 User Interface
 - Modern, responsive design
@@ -65,7 +67,6 @@ A modern, full-stack e-commerce application built with the MERN stack (MongoDB, 
 ### User Profile
 <img width="1350" height="677" alt="profile" src="https://github.com/user-attachments/assets/a0c433b7-3a9d-47bd-9558-ae4ee0096955" />
 
-
 ## 🚀 Installation
 
 ### Prerequisites
@@ -107,7 +108,7 @@ PORT=5000
 cd backend
 npm run dev
 ```
-The backend will run on `http://localhost:5000`
+The backend will run on `http://localhost:5000` and automatically load all 63 products if the database is empty.
 
 #### Start Frontend Development Server
 ```bash
@@ -115,6 +116,11 @@ cd frontend
 npm run dev
 ```
 The frontend will run on `http://localhost:3000`
+
+### Step 6: Access Your Application
+Open your browser and go to `http://localhost:3000`
+
+**That's it!** The application will automatically load all products when you first run it.
 
 ## 🔧 Environment Variables
 
@@ -143,7 +149,7 @@ The frontend will run on `http://localhost:3000`
 ```
 GreenKart MERN/
 ├── backend/
-│   ├── index.js              # Server entry point
+│   ├── index.js              # Server entry point with auto-seeding
 │   ├── middleware/
 │   │   └── authMiddleware.js # JWT authentication middleware
 │   ├── models/
@@ -165,6 +171,19 @@ GreenKart MERN/
 │   └── package.json
 └── README.md
 ```
+
+## 🎯 Key Features
+
+### User Experience
+- **Registration flow**: Users are redirected to login after registration
+- **Responsive design**: Works perfectly on all devices
+- **Real-time updates**: Cart updates instantly
+- **Search functionality**: Find products quickly
+
+### Security
+- **JWT authentication**: Secure token-based auth
+- **Password hashing**: bcrypt for secure password storage
+- **CORS protection**: Secure cross-origin requests
 
 ---
 
